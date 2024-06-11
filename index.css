@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Rubik;
+}
+
+.landing{
+    background-color: lightseagreen;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.footer{
+    background-color: #272727;
+    color: white;
+}
+
+.ligne1Text{
+    font-size: 5vh;
+}
