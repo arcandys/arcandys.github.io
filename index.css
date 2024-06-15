@@ -88,7 +88,7 @@ header.sticky ul li a{
 
 
 .helloText{
-    font-size: 4vh;
+    font-size: 5vh;
     padding-left: 2vw;
     padding-top: 30vh;
     z-index: 30;
@@ -96,12 +96,15 @@ header.sticky ul li a{
 }
 
 .name{
-    font-size: 6vh;
+    font-size: 8vh;
     padding-left: 2vw;
     padding-top: 34vh;
     z-index: 29;
     position: absolute;
     font-weight: 600;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .scrollContainer{
@@ -112,14 +115,14 @@ header.sticky ul li a{
 
 .scrollText{
     font-size: 3vh;
-    padding-top: 42vh;
+    padding-top: 43vh;
     padding-left: 2vw;
     gap: var(--gap);
     display: flex;
     overflow: hidden;
     user-select: none;
     --gap: 1px;
-    max-width:47.5vh;
+    max-width:97vh;
 }
 
 .scrollText ul{
@@ -178,6 +181,19 @@ header.sticky ul li a{
     font-weight: 300;
 }
 
-.image{
-    
+.imageProfil{
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    padding-top: 20vh;
+    padding-right: 5vw;
+}
+
+.imageProfil img{
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    border: 3px solid #000000;
 }
