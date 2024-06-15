@@ -1,33 +1,83 @@
 <!DOCTYPE html>
+    <html lang="fr">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <html>
 <head>
+    <title>portfolio:3000</title>
 </head>
 
 <body>
-<div class="landing">
-    <ul>
-        <li class="ligne1Text">
-            <span class="ligne1_1">ETUDIANT</span>
-            <span class="ligne1_2">ETUDIANT</span>
-            <span class="ligne1_3">ETUDIANT</span>
-            <span class="ligne1_4">ETUDIANT</span>
-            <span class="ligne1_5">ETUDIANT</span>
-        </li>
-        <li class="ligne2Text">
-            <span class="ligne2_1">APPRENTI</span>
-            <span class="ligne2_2">APPRENTI</span>
-            <span class="ligne2_3">APPRENTI</span>
-            <span class="ligne2_4">APPRENTI</span>
-            <span class="ligne2_5">APPRENTI</span>
-        </li>
-    </ul>
+<div>
+
+    <header>
+        <a href="#"></a>
+        <ul>
+            <li><a href="#section1">Accueil</a></li>
+            <li><a href="#section2">Projets</a></li>
+            <li><a href="#section3">Formation</a></li>
+            <li><a href="#section4">Expériences</a></li>
+        </ul>
+    </header>
+        
+    <div class="landing" id="section1">
+        <div class="helloText">
+            <a>Hello! Moi c'est<br></a><br>
+        </div>
+        <div class="name">
+            <a>Lucas ARNOULD</a>
+        </div>
+        <div class="scrollContainer">
+            <div class="scrollText">
+                <ul>
+                    <li>
+                        <span class="ligne1_1"> ÉTUDIANT INGÉNIEUR A L'ESIEA PARIS //</span>
+                        <span class="ligne1_2">ALTERNANT DRP CHEZ AXA INVESTMENT MANAGERS</span>
+                        <span class="ligne1_3">// MAJEURE SOFTWARE ENGINEERING //</span>
+                        <span class="ligne1_4">MEMBRE DE KPS A L'ESIEA //</span>
+                        <span class="ligne1_5">EXPERIMENTÉ EN GOUVERNANCE CYBER, EN FORENSICS, EN DÉVELOPPEMENT ET EN GESTION DE SI //</span>
+                        <span class="ligne1_6">MENEUR DE PROJETS DIVERS //</span>
+                        <span class="ligne1_7">Toujours là?? haha // </span>
+                    </li>
+                </ul>
+
+                <ul aria-hidden="true">
+                    <li>
+                        <span class="ligne1_1"> ÉTUDIANT INGÉNIEUR A L'ESIEA PARIS //</span>
+                        <span class="ligne1_2">ALTERNANT DRP CHEZ AXA INVESTMENT MANAGERS</span>
+                        <span class="ligne1_3">// MAJEURE SOFTWARE ENGINEERING //</span>
+                        <span class="ligne1_4">MEMBRE DE KPS A L'ESIEA //</span>
+                        <span class="ligne1_5">EXPERIMENTÉ EN GOUVERNANCE CYBER, EN FORENSICS, EN DÉVELOPPEMENT ET EN GESTION DE SI //</span>
+                        <span class="ligne1_6">MENEUR DE PROJETS DIVERS //</span>
+                        <span class="ligne1_7">Toujours là?? haha // </span>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="imageProfil">
+            <img src="src/photo.jpg">
+        </div>
+    </div>
+
+
+
+
+    <div class="carte" id="section2">section2</div>
+    <div class="carte2" id="section3">section3</div>
+    <div class="carte3" id="section4">section4</div>
 </div>
-<div class="section2">section2</div>
-<div class="section3">section3</div>
-<div class="footer">footer</div>
+    <div class="footer" id="footer">footer</div>
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
 
 </body>
 </html>
