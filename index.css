@@ -347,12 +347,12 @@ header.sticky a{    /*pour initiales*/
     width: 100%;
     height: 100vh;
     display: flex;
-    margin-top: 10vh;
+    margin-top: 9vh;
     justify-content: center;
 }
 
 .containerProjets {
-    height: 70vh;
+    height: 65vh;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
@@ -402,12 +402,17 @@ header.sticky a{    /*pour initiales*/
     opacity: 0;
     transform: translateY(30px);
     transition-delay: .3s;
-    transition: all .3s ease;
+    transition: all .4s ease;
 }
 
-.descriptionProjet p {
-    color: #b0b0ba;
-    padding-top: 5px;
+.descripText {
+    color: white;
+    padding-top: 3px;
+}
+
+.descripText2 {
+    color: black;
+    padding-top: 3px;
 }
 
 .descriptionProjet h4 {
@@ -443,6 +448,9 @@ input:checked + label .descriptionProjet {
 
 /* tuto youtube */
 
-.annotationprojet{
-    position: absolute;
+.annotationProj{
+    font-weight: bold;
+    background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(126,28,124,1) 52%, rgba(0,5,158,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
 }
