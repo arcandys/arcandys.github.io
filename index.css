@@ -560,12 +560,12 @@ input:checked + label .descriptionProjet {
 }
 
 .box h1{
-    font-size: 3.2vh;
+    font-size: 3.1vh;
     font-style: italic;
 }
 
 .box p{
-    font-size: 1.7vh;
+    font-size: 1.6vh;
     overflow: hidden;
 }
 
@@ -578,5 +578,5 @@ input:checked + label .descriptionProjet {
     height: 50px;
     width: 50px;
     display: flex;
-    padding-left: 49%;
+    padding-top: 10px;
 }
