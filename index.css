@@ -81,7 +81,7 @@ header.sticky a{    /*pour initiales*/
 .carte2{
     width: 100vw;
     height: 100vh;
-    background-color: lightgreen;
+    background-color: #242424;
     color: white;
     position: sticky;
     top: 0;
@@ -359,8 +359,8 @@ header.sticky a{    /*pour initiales*/
 }
 
 .cardProjet {
-    width: 4.7vw;
-    border-radius: .75rem;
+    width: 15vw;
+    border-radius: .85rem;
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
@@ -453,4 +453,52 @@ input:checked + label .descriptionProjet {
     background-image: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(126,28,124,1) 52%, rgba(0,5,158,1) 100%);
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.timeline{
+    padding-left: 33%;
+    padding-top: 7vh;
+    align-items: center;
+    position: relative;
+}
+
+.checkpoint{
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    position: relative;
+    max-width: 34vw;
+}
+
+.checkpoint div{
+    border: 2px solid white;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+.checkpoint p{
+    line-height: 27px;
+    color: white;
+}
+
+.checkpoint h2{
+    font-weight: bold;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 50%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.checkpoint:nth-child(odd){
+    border-left: 3px solid white;
+    padding-left: 3em;
+    transform: translateX(50%);
+}
+
+.checkpoint:nth-child(even){
+    border-right: 3px solid white;
+    padding-right: 3em;
+    transform: translateX(-49.6%);
+}
+
+.checkpoint:nth-child(even)::before{
+    right: 0;
 }
