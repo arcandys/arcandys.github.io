@@ -462,14 +462,16 @@ input:checked + label .descriptionProjet {
     align-items: center;
     justify-content: flex-start;
     padding-top: 7vh;
-    padding-left: 5%; /* Adjusted for better centering */
-    padding-right: 5%; /* Added for better centering */
+    padding-bottom: 7vh;
+    padding-left: 5%;
+    padding-right: 5%;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .checkpoint{
     padding: 2vw 0;
-    max-width: 40vw; /* Adjusted for better responsiveness */
+    max-width: 40vw;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -508,8 +510,9 @@ input:checked + label .descriptionProjet {
 .checkpoint:nth-child(even){
     border-right: 3px solid white;
     padding-right: 3em;
-    transform: translateX(-49.4%);
+    transform: translateX(-49.7%);
     position: relative;
+    text-align: right;
 }
 
 .checkpoint:nth-child(even)::before{
