@@ -85,6 +85,7 @@ header.sticky a{    /*pour initiales*/
     color: white;
     position: sticky;
     top: 0;
+    overflow-y: auto;
 }
 
 .carte3{
@@ -456,27 +457,36 @@ input:checked + label .descriptionProjet {
 }
 
 .timeline{
-    padding-left: 33%;
-    padding-top: 7vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    position: relative;
+    justify-content: flex-start;
+    padding-top: 7vh;
+    padding-left: 5%; /* Adjusted for better centering */
+    padding-right: 5%; /* Added for better centering */
+    box-sizing: border-box;
 }
 
 .checkpoint{
-    padding-top: 3vh;
-    padding-bottom: 5vh;
+    padding: 2vw 0;
+    max-width: 40vw; /* Adjusted for better responsiveness */
+    width: 100%;
+    display: flex;
+    justify-content: center;
     position: relative;
-    max-width: 34vw;
+    box-sizing: border-box;
 }
 
 .checkpoint div{
     border: 2px solid white;
     border-radius: 2em;
-    padding: 1em;
+    padding: 1.5em;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .checkpoint p{
-    line-height: 27px;
+    line-height: 1.5em;
     color: white;
 }
 
@@ -485,18 +495,21 @@ input:checked + label .descriptionProjet {
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 50%, #FFCC70 100%);
     -webkit-background-clip: text;
     color: transparent;
+    margin: 0;
 }
 
 .checkpoint:nth-child(odd){
     border-left: 3px solid white;
     padding-left: 3em;
     transform: translateX(50%);
+    position: relative;
 }
 
 .checkpoint:nth-child(even){
     border-right: 3px solid white;
     padding-right: 3em;
-    transform: translateX(-49.6%);
+    transform: translateX(-49.4%);
+    position: relative;
 }
 
 .checkpoint:nth-child(even)::before{
